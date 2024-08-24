@@ -1,0 +1,106 @@
+/* Navbar.css */
+
+
+
+/* Contenedor principal */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Navbar principal */
+.banner-navbar-container .navbar{
+  background-color: rgba(91, 90, 88, 0.433); 
+}
+
+/* Marca del navbar */
+.navbar-brand {
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Estilo del menú hamburguesa */
+.menu-icon {
+  display: none; /* Oculta el icono del menú en pantallas grandes */
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #fff;
+  padding: 10px;
+}
+
+.menu-icon-bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  margin: 5px auto;
+  transition: 0.3s;
+}
+
+/* Menú de navegación */
+.nav-menu {
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row; /* Menú horizontal en pantallas grandes */
+  align-items: center;
+}
+
+.nav-item {
+  margin: 0;
+}
+
+.nav-link {
+  color: #fff; /* Color de texto blanco */
+  text-decoration: none;
+  font-size: 16px;
+  padding: 15px 20px;
+  display: block; /* Asegura que el enlace ocupe el ancho completo del contenedor */
+  transition: background 0.3s, color 0.3s; /* Transiciones suaves para el hover */
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  background:var(--color-dark-brown); /* Color de fondo azul oscuro cuando se pasa el ratón */
+  color: #fff; /* Color de texto blanco cuando se pasa el ratón */
+}
+
+/* Estilo del botón */
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  color: #fff;
+  text-decoration: none;
+  background: var(--color-dark-brown); /* Color de fondo del botón */
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background:var(--color-light-brown); /* Color de fondo del botón en hover */
+}
+
+.header-btn{
+  margin-left: 15px;
+}
+
+
+
+@media (max-width: 1023px) {
+  .navbar .navbar-menu {
+    background-color: white;
+  }
+  .navbar-burger:hover {
+    background-color: transparent !important; /* Elimina cualquier cambio de fondo */
+  }
+  .nav-link{
+    color: black;
+  }
+}
+

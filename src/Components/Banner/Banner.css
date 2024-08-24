@@ -1,0 +1,124 @@
+/* Contenido del banner */
+.banner-content {
+  background-color: rgba(91, 90, 88, 0.433); 
+  padding: 20px;
+  width: 100%; /* Ocupa el 100% del ancho del banner */
+  height: 100vh; /* Ocupa el 100% de la altura del banner */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra sutil para el efecto de profundidad */
+  z-index: 1;
+}
+
+.banner-40vh{
+  height: 45vh;
+  box-sizing: border-box;
+}
+
+.banner-content-mobile{
+  height: 100%;
+}
+
+/* Estilo para el título */
+h1 {
+  font-size: 5.5rem;
+  margin: 0;
+}
+
+/* Estilo para el subtítulo */
+h2 {
+  font-size: 2rem;
+  margin: 10px 0 0;
+}
+.nombre-title{
+  font-size:50px;
+  color: #ffffff;
+}
+
+/* Estilo para el texto dinámico */
+.dynamic-text {
+  background: linear-gradient(135deg, #f8fafa, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+  position: relative;
+}
+
+/* Animación para el texto dinámico */
+@keyframes text-fade {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+/* Animación aplicada al texto dinámico */
+.dynamic-text {
+  animation: text-fade 3s infinite;
+}
+
+@media (max-width: 768px) {
+  .banner{
+    box-sizing: border-box;
+  }
+
+  
+  h1 {
+    font-size: 1rem; /* Tamaño más pequeño para pantallas móviles */
+  }
+
+  h2 {
+    font-size: 1rem; /* Tamaño más pequeño para pantallas móviles */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem; /* Tamaño aún más pequeño para pantallas muy pequeñas */
+  }
+
+  h2 {
+    font-size: 1.25rem; /* Tamaño aún más pequeño para pantallas muy pequeñas */
+  }
+}
+
+/* Responsivo para pantallas medianas */
+@media (max-width: 768px) {
+  .banner {
+    height: 40vh; /* Aumenta la altura del banner para pantallas medianas */
+  }
+
+  h1 {
+    font-size: 2rem; /* Tamaño más pequeño para pantallas móviles */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Tamaño más pequeño para pantallas móviles */
+  }
+}
+
+/* Responsivo para pantallas pequeñas */
+@media (max-width: 480px) {
+  .banner {
+    height: 50vh; /* Aumenta la altura del banner para pantallas pequeñas */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Tamaño aún más pequeño para pantallas muy pequeñas */
+  }
+
+  h2 {
+    font-size: 1.25rem; /* Tamaño aún más pequeño para pantallas muy pequeñas */
+  }
+}

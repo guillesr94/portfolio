@@ -1,0 +1,107 @@
+/* Footer Container */
+footer {
+  background-color: #333;
+  color: #fff; 
+  font-family: Arial, sans-serif;
+  height: 20vh;
+}
+
+.insta-container{
+  margin-top: 3px;
+  height: 34px;
+}
+
+
+
+.footer-contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-contact li {
+  margin: 5px 0;
+}
+
+.footer-contact a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-contact a:hover {
+  color: var(--color-light-brown);
+  text-decoration: underline;
+}
+
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px; /* Espacio entre íconos de redes sociales */
+}
+
+.footer-social li {
+  display: inline;
+  position: relative; /* Necesario para el pseudo-elemento de subrayado */
+}
+
+.footer-social a {
+  position: relative;
+  display: inline-block;
+  width: 24px; /* Ajusta el tamaño del ícono */
+  height: 24px; /* Ajusta el tamaño del ícono */
+  text-decoration: none;
+}
+
+.footer-social svg {
+  width: 100%;
+  height: 100%;
+  fill:var(--color-white); /* Color marrón para el icono */
+  transition: fill 0.3s ease, transform 0.3s ease; /* Transición suave para el color y el transform */
+}
+
+
+.footer-social a:hover svg {
+  fill: var(--color-white); /* Hace el icono más claro al pasar el ratón */
+  transform: translateY(-2px); /* Levanta un poco el icono al hacer hover */
+}
+
+/* linea del icono */
+.footer-social a::after {
+  content: ""; 
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-white); /* Mismo color más claro para el subrayado */
+  position: absolute;
+  bottom: -5px; /* Ajusta la posición del subrayado justo debajo del ícono */
+  left: 10;
+  transition: width 0.3s ease; /* Transición suave para el subrayado */
+}
+
+.footer-social a:hover::after {
+  width: 100%; /* Extiende la línea de subrayado en hover */
+}
+
+.footer-social a:hover {
+  color:var(--color-white); /* Mantiene el color marrón más claro en hover */
+}
+
+
+.insta-icon,.linkedin-icon{
+  color: #ffffff;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-social ul {
+    gap: 30px; /* Ajusta el espacio entre íconos en móviles */
+  }
+}

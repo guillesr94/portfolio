@@ -1,0 +1,84 @@
+@import "../../../node_modules/bulma/css/bulma.min.css";
+
+
+/* global.css */
+body {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-base);
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-white);
+  box-sizing: border-box;
+}
+
+:root {
+  --color-dark-brown: #4E342E;   /* Marrón oscuro */
+  --color-medium-brown: #795548; /* Marrón intermedio */
+  --color-light-brown: #A1887F;  /* Marrón claro */
+  --color-white: #ffffff;        /* Blanco */
+  --font-primary: 'Arial', sans-serif;
+  --font-size-base: 16px;
+  --spacing-base: 1rem;
+}
+
+/* banner del home */
+.banner-navbar-container {
+  background: url('/src/assets/images/banner1.jpg') no-repeat center center/cover;
+  position: relative;
+  overflow: hidden;
+  background-size: cover; /* Asegura que la imagen cubra todo el área del banner */
+  background-position: center; /* Centra la imagen en el contenedor */
+}
+
+.banner.full-height {
+  height: 100vh; /* Ocupa la altura completa del viewport */
+  
+}
+
+/* Banner con altura ajustada (no home) */
+.banner-navbar-container.no-adjust {
+  height: 40vh; /* Ajusta la altura según lo necesites */
+  background-position-y: -80px;
+}
+
+.service-container{
+  justify-content: center;
+  height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+
+@media (max-width: 650px) {
+  .service-container {
+    flex-direction: column; /* Las tarjetas se colocan una debajo de la otra */
+    align-items: center; /* Centra las tarjetas horizontalmente */
+  }
+
+  .service-card {
+    max-width: none; /* Elimina el tamaño máximo para adaptarse mejor en móviles */
+  }
+   /* Banner */
+   .banner-navbar-container {
+    background-size: cover;
+    background-position: center center;
+    height: 100vh; /* Ajusta la altura para pantallas pequeñas */
+  }
+
+  /* Contenedor de servicios */
+  .service-container {
+    flex-direction: column; /* Las tarjetas se colocan una debajo de la otra */
+    align-items: center; /* Centra las tarjetas horizontalmente */
+  }
+
+  .service-card {
+    max-width: none; /* Elimina el tamaño máximo para adaptarse mejor en móviles */
+  }
+
+  /* Ajustes adicionales para el banner */
+  .banner-navbar-container.no-adjust {
+    height: 30vh; /* Ajusta la altura de los banners que no son de la home para pantallas pequeñas */
+    background-position-y: center; /* Centra verticalmente la imagen */
+  }
+}

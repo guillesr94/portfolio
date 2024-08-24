@@ -1,0 +1,302 @@
+/* ------------------------------ */
+/* ESTILOS GENERALES DE LOS ÍCONOS SOCIALES */
+/* ------------------------------ */
+/* Estilos de subrayado para los iconos en la sección About */
+.social-links li {
+  display: inline-block;
+  position: relative; /* Necesario para el pseudo-elemento de subrayado */
+}
+
+.social-links a {
+  position: relative;
+  display: inline-block;
+  width: 25px; /* Ajusta el tamaño del ícono si es necesario */
+  height: 25px;
+  text-decoration: none;
+}
+
+.social-links svg {
+  width: 100%;
+  height: 100%;
+  fill: #ffffff; /* Color blanco inicial del ícono */
+  transition: fill 0.3s ease, transform 0.3s ease; /* Transición suave para el color y el transform */
+}
+
+.social-links a:hover svg {
+  fill: #9c6f37; /* Cambia el color del ícono al marrón al hacer hover */
+  transform: translateY(-2px); /* Levanta un poco el ícono al hacer hover */
+}
+
+/* Subrayado marrón en hover */
+.social-links a::after {
+  content: ""; 
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #9c6f37; /* Color marrón para el subrayado */
+  position: absolute;
+  bottom: -5px; /* Ajusta la posición del subrayado justo debajo del ícono */
+  left: 0;
+  transition: width 0.3s ease; /* Transición suave para el subrayado */
+}
+
+.social-links a:hover::after {
+  width: 100%; /* Extiende la línea de subrayado en hover */
+}
+
+.social-links a:hover {
+  color: #9c6f37; /* Mantiene el color marrón en hover */
+}
+
+
+.icono-instagram{
+  position: relative;
+  height: 25px; /* Tamaño del ícono, ajusta según sea necesario */
+  color: var(--color-medium-brown);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+
+
+
+
+
+
+.brown-dark-text{
+  color: var(--color-dark-brown);
+}
+/* ------------------------------ */
+/* SECCIÓN SOBRE EL CONTENIDO DE "ABOUT" */
+/* ------------------------------ */
+.about-section {
+  background-color: var(--color-white);
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.about-image {
+  max-width: 50%; /* Limita el ancho máximo al 50% */
+  min-width: 50%;
+  padding: 10px; /* Agrega un pequeño padding */
+  box-sizing: border-box;
+}
+
+.title-small {
+  color: var(--color-medium-brown);
+  font-size: 1.2rem;
+  margin-bottom: var(--spacing-base);
+}
+
+.title-main,
+.about-info p {
+  color: var(--color-dark-brown);
+  margin-bottom: var(--spacing-base);
+}
+
+.personal-info p {
+  padding-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.personal-info a,
+.social-icon {
+  color: var(--color-medium-brown);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links {
+  display: flex;
+  margin: 1rem 0;
+  list-style-type: none;
+  padding: 0;
+}
+
+
+.social-links li {
+  margin-right: 1rem;
+}
+
+
+
+.action-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.action-buttons .btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  color: var(--color-white);
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--color-dark-brown);
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  background-color: var(--color-medium-brown);
+}
+
+.btn-secondary {
+  background-color: var(--color-light-brown);
+}
+
+/* ------------------------------ */
+/* SECCIÓN "LO QUE HAGO" */
+/* ------------------------------ */
+.what-i-do {
+  padding: 40px 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.container-what-i-do {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-left: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container-what-i-do:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.main-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.box-what-i-do {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1 1 100%;
+  margin-bottom: 20px;
+}
+
+.about-single {
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  
+  align-items:flex-start;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-left: 20px;
+}
+
+.about-single:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-icon {
+  font-size: 36px;
+  color: var(--color-dark-brown);
+  display: flex;
+  flex-direction: column;
+  justify-content:end;
+  padding-left: 20px;
+}
+
+.about-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.title-content{
+  display: flex;
+  max-height: 50px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.column .title-brown{
+  color: var(--color-dark-brown);
+}
+.about-text {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+.icono{
+  width: 25px;
+  height: 25px;
+}
+/* ------------------------------ */
+/* ESTILOS RESPONSIVOS */
+/* ------------------------------ */
+@media (max-width: 950px) {
+  .container-what-i-do {
+    max-width: 90%;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .main-title {
+    font-size: 22px;
+  }
+
+  .about-icon {
+    font-size: 32px;
+  }
+
+  .about-title {
+    font-size: 18px;
+  }
+
+  .about-text {
+    font-size: 14px;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+   .about-image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .about-info {
+    order: 0;
+    max-width: 100%;
+  }
+}
