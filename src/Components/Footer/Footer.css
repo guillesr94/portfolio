@@ -97,6 +97,13 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .footer {
+    background-color: #333;
+    color: #fff; 
+    font-family: Arial, sans-serif;
+    height: 20vh;
+  }
+  
   .footer-container {
     flex-direction: column;
   }
