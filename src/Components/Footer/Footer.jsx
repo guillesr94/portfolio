@@ -1,7 +1,6 @@
 import React from 'react'
 import "../Footer/Footer.css"
 import { ReactComponent as InstaIcon } from '../../assets/iconos/instagram-brands-solid.svg';
-import { ReactComponent as MailIcon} from '../../assets/iconos/mail.svg';
 import { ReactComponent as LinkedinIcon} from '../../assets/iconos/linkedin-in-brands-solid.svg';
 
 
