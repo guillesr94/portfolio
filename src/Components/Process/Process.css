@@ -1,0 +1,81 @@
+/* Centrado del contenedor principal */
+.proceso-trabajo {
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Centramos horizontalmente */
+  max-width: 800px; /* Ancho máximo para el contenedor */
+  text-align: center; /* Centramos el texto */
+}
+
+/* Título */
+.proceso-trabajo h2 {
+  font-size: 28px;
+  color: var(--color-dark-brown);
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+/* Párrafo introductorio */
+.proceso-trabajo p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+/* Estilo de la lista de pasos */
+.proceso-lista {
+  list-style-type: none;
+  padding-left: 0;
+  display: grid;
+  gap: 20px; /* Espacio entre los pasos */
+  justify-items: center; /* Centra los ítems */
+}
+
+.proceso-lista li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  padding: 16px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Aseguramos que el ancho se ajuste al contenedor */
+  max-width: 600px; /* Ancho máximo para cada paso */
+  text-align: left; /* Alineamos el texto a la izquierda para mejor legibilidad */
+}
+
+/* Estilo de los encabezados dentro de los pasos */
+.proceso-lista h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--color-dark-brown);
+  margin-bottom: 8px;
+}
+
+/* Párrafo dentro de los pasos */
+.proceso-lista p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 0;
+}
+
+/* Sombra en los íconos (si decides agregar) */
+.proceso-lista .icon-container {
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.proceso-lista .service-icon {
+  font-size: 24px;
+  color: var(--color-dark-brown);
+}
