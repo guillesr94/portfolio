@@ -2,8 +2,9 @@ import React from 'react'
 import Navbar from '../Components/Navbar/Navbar'
 import Banner from '../Components/Banner/Banner';
 import ServiceCard from '../Components/ServiceCard/ServiceCard'
-import { ReactComponent as GridIcon } from '../assets/iconos/buromobelexperte-brands-solid.svg';
+import ProcesoDeTrabajo from '../Components/Process/Process';
 
+import { ReactComponent as GridIcon } from '../assets/iconos/buromobelexperte-brands-solid.svg';
 import { ReactComponent as BoardIcon } from '../assets/iconos/chalkboard-solid.svg';
 import Footer from '../Components/Footer/Footer'
 
@@ -28,6 +29,7 @@ function Services() {
           />
           </div>
     </section>
+    <ProcesoDeTrabajo />
     <Footer/>
     </>
   )
